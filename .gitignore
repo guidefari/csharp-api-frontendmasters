@@ -1,0 +1,34 @@
+To create a .gitignore file for a C# 8 project, you can include the following patterns to ignore files generated during the build process and other files that are not necessary to be tracked by Git:
+
+```plaintext
+# Ignore Visual Studio files
+.vs/
+*.suo
+*.user
+*.sln.docstates
+*.userprefs
+
+# Ignore ReSharper files
+_ReSharper*/
+*.resharper
+*.DotSettings
+
+# Ignore build output
+bin/
+obj/
+
+# Ignore NuGet packages
+packages/
+
+# Ignore build artifacts
+*.apk
+*.aab
+*.dll
+*.exe
+*.pdb
+*.msi
+```
+
+You can customize this list based on your specific project's build configuration and additional files you want to ignore. 
+
+Just create a new file named `.gitignore` in the root of your project and paste in the contents above. Git will then start ignoring the files and directories specified, which can help keep your repository clean.
